@@ -1,0 +1,15 @@
+*.swp
+node_modules
+build
+npm-debug.log
+coverage
+.tmp
+.tags
+.tags1
+*.orig
+.DS_Store
+.jsbeautifyrc
+#Webstorm
+.idea/
+package-lock.json
+dist/

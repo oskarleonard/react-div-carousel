@@ -1,0 +1,63 @@
+{
+    "parser": "babel-eslint",
+    "plugins": [
+        "react",
+        "import"
+    ],
+    "settings": {
+        "react": {
+            "createClass": "createClass", // Regex for Component Factory to use, default to "createClass"
+            "pragma": "React"  // Pragma to use, default to "React"
+        }
+    },
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        }
+    },
+    "rules": {
+        "eqeqeq": 1,
+        "indent": ["warn", 2, { "MemberExpression": 1, "SwitchCase": 1 }],
+        "dot-notation": 1,
+        "no-redeclare": 0,
+        "semi": 2,
+        "import/order": ["warn", {
+            "groups": [
+                "builtin", "external", "internal", "parent", "sibling", "index"
+            ],
+            "newlines-between": "never"
+        }],
+        "object-curly-spacing": ["warn", "always"],
+        "max-len": [1, 120, 2, { "ignoreComments": true }],
+        "no-multiple-empty-lines": ["warn", { "max": 1, "maxEOF": 1 }],
+        "spaced-comment": ["warn", "always", { "exceptions": ["-", "+"] }],
+        "quotes": [1, "single"],
+        "semi-spacing": 1,
+        "no-mixed-spaces-and-tabs": 1,
+        "no-extra-semi": 1,
+        "space-before-blocks": ["warn", "always"],
+        "keyword-spacing": [2, {"before": true, "after": true}],
+        "eol-last": ["warn", "always"],
+        "constructor-super": "warn",
+        "no-useless-constructor": "warn",
+        "no-duplicate-imports": "warn",
+        "no-trailing-spaces": "warn",
+        "no-tabs": "warn",
+        "no-unused-vars": "warn",
+        "jsx-quotes":["warn", "prefer-double"],
+        "padding-line-between-statements": [ "warn", {
+            "blankLine": "always", "prev": "*", "next": "return"
+        }],
+        "react/prefer-es6-class": ["warn", "always"],
+        "react/no-direct-mutation-state": "warn",
+        "react/jsx-closing-bracket-location": ["warn", {"selfClosing": "tag-aligned", "nonEmpty": "tag-aligned"}],
+        "react/jsx-first-prop-new-line": ["warn", "multiline"],
+        "react/jsx-tag-spacing": ["warn", { "beforeSelfClosing": "always" }],
+        "react/jsx-uses-vars": "warn",
+        "react/jsx-uses-react": "warn",
+        "react/jsx-no-duplicate-props": "warn"
+    }
+}

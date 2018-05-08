@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name=viewport content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="http://icons.iconarchive.com/icons/icons8/windows-8/256/City-Carousel-icon.png" type="image/png" />
+    <title>React Div Carousel</title>
+    <% styleSources.forEach(function(src) { %>
+        <link rel="stylesheet" href="<%= publicPath + src %>" type="text/css" media="screen" charset="utf-8" />
+    <% }) %>
+</head>
+<body>
+<div id="root"></div>
+    <% scriptSources.forEach(function(src) { %>
+        <script src="<%= publicPath + src %>"></script>
+    <% }) %>
+</body>
+</html>

@@ -1,0 +1,31 @@
+.arrow {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  transition: opacity 0.3s;
+  opacity: 1;
+  position: absolute;
+  color: #000;
+  top: 45%;
+  cursor: pointer;
+
+  .arrow:hover {
+    background-color: #196b1e;
+    border-radius: 50%;
+  }
+}
+
+.iconArrow {
+  align-self: center;
+}
+
+.arrowLeft {
+  composes: arrow;
+  left: 3px;
+}
+
+.arrowRight {
+  composes: arrow;
+  right: 3px;
+}

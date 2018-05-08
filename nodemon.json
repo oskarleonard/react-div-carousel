@@ -1,0 +1,4 @@
+{
+    "ignore": ["demo/server/render.js"],
+    "watch": ["demo/server/*", "webpack/*"]
+}

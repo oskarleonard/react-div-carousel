@@ -1,0 +1,17 @@
+{
+  "moduleFileExtensions": [
+    "js"
+  ],
+  "roots": ["src"],
+  "modulePaths": ["src"],
+  "collectCoverageFrom" : ["src/**/*.js", "!**/node_modules/**", "!src/styles/**", "!src/index.js"],
+  "moduleDirectories": ["node_modules"],
+  "snapshotSerializers": ["enzyme-to-json/serializer"],
+  "moduleNameMapper": {
+    "\\.scss$": "<rootDir>/src/components/__mocks__/styleMock.js"
+  },
+  "setupFiles": [
+    "./scripts/shim.js",
+    "./test-setup.js"
+  ]
+}

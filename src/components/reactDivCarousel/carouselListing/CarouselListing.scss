@@ -1,0 +1,10 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.listTooFew {
+    composes: list;
+    justify-content: center;
+}
