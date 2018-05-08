@@ -4,6 +4,7 @@
 1. nvm use
 2. npm i
 3. npm start
+4. go to localhost:4004
 
 ## Todo
 1. Remove duplicate renders
