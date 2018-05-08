@@ -1,5 +1,10 @@
 # React Div Slider
 
+## Info
+1. /src/ is where you find the source code of the carousel
+2. /demo/ is the app where you can use it and view by `npm start`
+3. /lib/ is the built/published version of the carousel component. Later to be imported in using projects
+
 ## Run Demo
 1. nvm use
 2. npm i
